@@ -1,3 +1,6 @@
+.section {
+}
+
 .product {
     width: 1120px;
     margin: 0 auto;
@@ -6,20 +9,97 @@
     gap: 76px;
 }
 
-.product .slider {
+.product .slide_container {
+    position: relative;
+}
+
+.product .slide {
     width: 580px;
     height: 580px;
-    position: relative;
     background-color: #ddd;
 }
 
-.product .slider .arrows {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.slide {
+.product .slide .item {
     width: 580px;
     height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .slide_container .arrows {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    display: flex;
+    gap: 16px;
+}
+
+.slide_container .arrows i {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.impose {
+    width: 524px;
+}
+.impose .titles {
+}
+.impose .titles h3{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 20px 0 56px;
+}
+.impose .titles p{
+
+}
+.impose .size .size_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.impose .size .size_title h3 {
+    font-weight: bold;
+}
+.impose .size .size_title p {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.impose .size {
+}
+
+.impose .size .size_container {
+    width: 524px;
+    margin: 28px 0;
+}
+.impose .size ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.impose .size ul li {
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.impose .size ul li:hover {
+    background-color: #eee;
+}
+
+.impose .btn {
+    width: 100%;
 }
