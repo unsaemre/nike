@@ -7,9 +7,9 @@ body {
 }
 
 .section {
-    background-color: #ccc;
     width: 1220px;
     margin: 100px auto;
+    padding: 0 20px ;
 }
 
 .wrap {
@@ -52,21 +52,243 @@ body {
     height: 640px;
     margin: 0 auto;
     position: relative;
-    background-color: gainsboro;
 }
 
 .main_slide .photo {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
 }
 
 .main_slide .text_box {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 20px;
 }
 
-.main_slide .text_box {
-    
+.main_slide .text_box h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.main_slide .text_box p{
+    margin: 10px 0 40px;
+}
+
+/* sction_title */
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.section_title h4{
+    font-weight: bold;
+    font-size: 24px;
+}
+.section_title .arrows{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.section_title .arrows i {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section 1 */
+.s1 {
+    display: flex;
+    gap: 20px;
+}
+.s1 .item {
+    flex: 1;
+    height: 580px;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+.s1 .item h3{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 50px;
+}
+.s1 .item a{
+    font-size: 20px;
+    padding: 52px 50px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+/* section 2 */
+.s2 .section_items {
+}
+.s2 .section_items .item{
+}
+.s2 .section_items .item .thumb{
+    width: 280px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+.s2 .section_items .item .titles{
+    padding: 20px 0;
+}
+.s2 .section_items .item .titles h4 {
+    font-weight: bold;
+}
+.s2 .section_items .item .titles p{
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* section 3 */
+.s3 {
+    display: flex;
+    gap: 20px;
+}
+.s3 .item .thumb {
+    width: 580px;
+    height: 360px;
+    background-color: #ddd;
+    position: relative;
+}
+.s3 .item .thumb .user{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.s3 .item .thumb .photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #111;
+}
+.s3 .item .thumb .info .name{
+    font-size: 14px;
+}
+.s3 .item .thumb .info .job{
+    font-size: 10px;
+}
+
+/* section 4 */
+.s4 .section_items {
+    overflow: hidden;
+}
+.s4 .section_items .item{
+    width: 380px;
+}
+.s4 .section_items .item .thumb{
+    width: 380px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.s4 .section_items .item .titles h4{
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+/* section 5 */
+.s5 {
+    text-align: center;
+    padding: 80px 0 70px 0;
+}
+.s5 .text_box{
+
+}
+.s5 .text_box h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+.s5 .text_box p{
+    padding: 30px 0 50px;
+    width: 42%;
+    margin: 0 auto;
+}
+.s5 .text_box a.btn{
+    margin: 0 auto;
+}
+
+/* footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    height: 360px;
+}
+.footer .section {
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 0 90px ;
+}
+.f_gnb{
+    display: flex;
+    gap: 100px;
+}
+
+.f_gnb > li > a {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+}
+
+.f_gnb .sub a{
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.f_gnb .sub a:hover {
+    text-decoration: underline;
+}
+
+.footer .section .sns {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    font-size: 10px;
+}
+
+.footer .section .sns a{
+    display: block;
+}
+.footer .section .sns i {
+    border-radius: 100%;
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer .section .copyright {
+    padding-top: 76px;
+    color: #ddd;
+    font-size: 10px;
 }
