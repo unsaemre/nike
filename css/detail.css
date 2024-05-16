@@ -1,6 +1,7 @@
+.detail .wrap {
+}
+
 .product {
-    width: 1120px;
-    padding: 0 20px;
     display: flex;
     gap: 76px;
 }
@@ -94,4 +95,61 @@
 
 .impose .btn {
     width: 100%;
+}
+
+/* .section 1 */
+.detail .s1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.detail .s1 .textbox {
+    padding: 90px 0 226px;
+}
+.detail .s1 .textbox h3{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.detail .s1 .textbox p { 
+    width: 380px;
+}
+
+.detail .s1 .item {
+    display: flex;
+    gap: 30px;
+}
+.detail .s1 .item a{
+    width: 380px;
+    height: 560px;
+    display: flex;
+    background-color: #111;
+}
+
+
+/* section 2 */
+.detail .s2 .section_items .item .thumb{
+    width: 280px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+.detail .s2 .section_items .item .titles{
+    padding: 20px 0;
+}
+.detail .s2 .section_items .item .titles h4 {
+    font-weight: bold;
+}
+.detail .s2 .section_items .item .titles p{
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) { 
+
 }

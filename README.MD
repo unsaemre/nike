@@ -5,3 +5,8 @@
 
     swiper-slide
     slick-slide
+
+    5-16
+    moblie
+    slick-slide 769 - 1개 1024 - 4개
+    common + inc 분리

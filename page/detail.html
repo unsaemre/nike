@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/common.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -19,28 +20,13 @@
 </head>
 <body>
     
-<div class="wrap">
+<div class="wrap detail">
 
-<!-- header -->
-    <div class="header">
-            <ul class="gnb">
-                <li><a href="#" class="active">Women</a></li>
-                <li><a href="#">Man</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Sale</a></li>
-            </ul>
-        <div class="logo">
-            <a href="../index.html"><img src="../image/logo.svg" alt=""></a>
-        </div>
-        <div class="extra">
-            <a href="#"><img src="../image/icon-Research.png" alt=""></a>
-            <a href="#"><img src="../image/icon-shopping bag.png" alt=""></a>
-        </div>
-    </div>
+    <!-- header -->
+    <div class="header_container"></div>
 
-<!-- section 1 -->
 
+<!-- product section -->
     <div class="product section">
 
         <div class="slide_container">
@@ -94,15 +80,20 @@
     </div>
 
 
+<!--  section 1 -->
+<div class="section s1">
+    <div class="textbox">
+        <h3>러닝 목표를<br>설정해 보세요.</h3>
+        <p>얼굴에 스치는 바람이 느겨질 정도로 속도를 내고 싶은순간이 있습니다. 러닝 숙련도에 따라 혹은 러닝 코스에, 목표에 맞는 러닝화를 만나보세요.</p>
+    </div>
+    <div class="item">
+        <a href="#">1</a>
+        <a href="#">2</a>
+    </div>
+</div>
 
-
-
-
-<div class="section s1"></div>
-<div class="section s2"></div>
-
-<!-- section3 -->
-    <div class="section s3">
+<!-- section2 -->
+    <div class="section s2">
         <div class="section_title">
             <h4>New Releases</h4>
             <div class="arrows">
@@ -173,54 +164,9 @@
     </div>
 
 
-<!-- footer -->
-    <div class="footer">
-        <div class="section">
-
-            <div class="f_menu">
-                <ul class="f_gnb">
-            
-                <li><a href="#">MY ACCOUNT</a>
-                <ul class="sub">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">주문조회</a></li>
-                </ul>
-                </li>
-                <li><a href="#">빠른 지원</a>
-                <ul class="sub">
-                    <li><a href="#">배송 및 반품</a></li>
-                    <li><a href="#">환불정책</a></li>
-                    <li><a href="#">서비스 가이드</a></li>
-                </ul>
-                </li>
-                <li><a href="#">ABOUT</a>
-                <ul class="sub">
-                    <li><a href="#">나이키</a></li>
-                    <li><a href="#">언론 및 미디어</a></li>
-                    <li><a href="#">나이키 멤버십</a></li>
-                </ul>
-                </li>
-                <li><a href="#">새로운 소식</a>
-                <ul class="sub">
-                    <li><a href="#">멤버 가입</a></li>
-                    <li><a href="#">매장 안내</a></li>
-                    <li><a href="#">나이키 저널</a></li>
-                </ul>
-                </li>
-
-            </ul>
-        </div>
-
-            <div class="copyright">©2023 Nike Wireframe Inc. All Rights Reserved.</div>
-            <div class="sns">
-                <a href="#"><i class="xi-facebook"></i></a>
-                <a href="#"><i class="xi-instagram"></i></a>
-                <a href="#"><i class="xi-twitter"></i></a>
-                <a href="#"><i class="xi-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
+    <!-- footer -->
+    <div class="footer_container"></div>
+    
 
 </div>
 
@@ -232,10 +178,40 @@ $(function(){
         autoplay : true,
         autoplaySpeed : 4000,
         dots : true,
-        nextArrow : ".next" ,
-        prevArrow : ".prev" 
+        nextArrow : ".product .next" ,
+        prevArrow : ".product .prev" 
     });
 })
+
+swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.s2 .next',
+        prevEl: '.s2 .prev',
+    },
+    
+});
+
+
+
+</script>
+
+<script>
+    // $("#result").load("data.php");
+    $(function(){
+        $(".header_container").load("../inc/header.html")
+        $(".footer_container").load("../inc/footer.html")
+    })
 </script>
 
 </body>
